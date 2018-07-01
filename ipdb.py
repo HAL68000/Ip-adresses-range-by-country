@@ -90,7 +90,3 @@ if results.country is None and results.ip is None:
     print 'ipdb.py -country US  (scan all the US ip ranges... Maybe a bad idea)'
     print 'ipdb.py -country ALL -ip 200 -sleep 5 (scan all the ip starting with 200. and wait 5 seconds between requests)'
     print 'ipdb.py -country ALL (scan all the ip ranges... This will take it forever :P )'
-
-    #iprange('159','GB')
-
-    #countryListMaker()
