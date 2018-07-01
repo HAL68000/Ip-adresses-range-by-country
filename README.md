@@ -17,7 +17,7 @@ ipdb.py
 Ip Database filler utility v1.0
 
 -------------------------------------------------------------------------------------------------------------
-*********************************Fill the database with whois information************************************
+*********************************Fill the database with whois information
 -------------------------------------------------------------------------------------------------------------
 Example usage
 ipdb.py -ip 200. -country US (scan all the US ip address starting with 200.)
@@ -33,8 +33,11 @@ The following libraries are necessary:
 
 
 dataset   https://dataset.readthedocs.io/en/latest/         pip install dataset
+
 stuf      https://pypi.org/project/stuf/                    pip install stuf
+
 ipwhois   https://github.com/secynic/ipwhois                pip install ipwhois
+
 argparse  https://pypi.org/project/argparse/                pip install argparse
 
 -----------------------------------------------------------------------------------------------------------------------------
