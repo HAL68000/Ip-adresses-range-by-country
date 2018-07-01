@@ -17,7 +17,7 @@ ipdb.py
 Ip Database filler utility v1.0
 
 -------------------------------------------------------------------------------------------------------------
-*********************************Fill the database with whois information
+Fill the database with whois information
 -------------------------------------------------------------------------------------------------------------
 Example usage
 ipdb.py -ip 200. -country US (scan all the US ip address starting with 200.)
