@@ -21,13 +21,9 @@ Fill the database with whois information
 -------------------------------------------------------------------------------------------------------------
 Example usage
 ipdb.py -ip 200. -country US (scan all the US ip address starting with 200.)
-
 Note: You can also use a more narrow range like 200.62.21. 
-
 ipdb.py -country US  (scan all the US ip ranges... Maybe a bad idea)
-
 ipdb.py -country ALL -ip 200 -sleep 5 (scan all the ip starting with 200. and wait 5 seconds between requests)
-
 ipdb.py -country ALL (scan all the ip ranges... This will take it forever :P )
 
 You can use this tool to fill the database with the whois public information. 
