@@ -11,7 +11,7 @@ from ipwhois import IPWhois
 
 
 # Parse the arguments used in this script
-parser = argparse.ArgumentParser(description='Example with non-optional arguments')
+parser = argparse.ArgumentParser(description='ipdb.py -country US')
 parser.add_argument('-ip', action="store", type=str, dest='ip')
 parser.add_argument('-country', action="store", type=str, dest='country')
 parser.add_argument('-sleep', action="store", type=int, dest='timesleep')
