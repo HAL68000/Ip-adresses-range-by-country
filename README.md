@@ -49,13 +49,7 @@ ipwhois   https://github.com/secynic/ipwhois                pip install ipwhois
 argparse  https://pypi.org/project/argparse/                pip install argparse
 
 -----------------------------------------------------------------------------------------------------------------------------
-Donate:
 
-Bitcoin       1NKNbzm3tkCsosg4U9hsg291RpYo8UiTpf
-
-Bitcoin Cash  qprdq7rwat0flqplcyuxkvq2jsvnta09tglsq9379u
-
-Litecoin      Lc8ccuUcScFZTvZL5WMEewREDwnZ4X89yV
 
 Contact me at hal68000@protonmail.com
 
