@@ -34,7 +34,7 @@ def whois_ip(ip):
         data = dict(ipstart=ip, name=name, description=description, cidr=cidr)
         whoisdb.upsert(data, ['ipstart'])
         time.sleep(timesleep)
-        print cidr,name,description
+        print (cidr,name,description)
     except Exception as e: print(e)
 
 # Make the ip list
@@ -63,12 +63,12 @@ if results.ip is not None and results.country is not None:
         for allcountries in countrylist:
             iprange(results.ip, allcountries)
     else:
-        print 'The country code is invalid'
+        print ('The country code is invalid')
 if results.timesleep is not None:
     timesleep = results.timesleep
 if results.timesleep is None:
     timesleep = 1
-    print 'Timesleep set to 1'
+    print ('Timesleep set to 1')
 if results.country is not None:
     if results.country in countrylist:
         iprange('', results.country)
@@ -76,17 +76,17 @@ if results.country is not None:
         for allcountries in countrylist:
             iprange('',allcountries)
     else:
-        print 'The country code is invalid'
+        print ('The country code is invalid')
 
 if results.country is None and results.ip is None:
-    print 'Ip Database filler utility v1.0'
-    print ''
-    print '-------------------------------------------------------------------------------------------------------------'
-    print '*********************************Fill the database with whois information************************************'
-    print '-------------------------------------------------------------------------------------------------------------'
-    print 'Example usage'
-    print 'ipdb.py -ip 200. -country US (scan all the US ip address starting with 200.)'
-    print 'Note: You can also use a more narrow range like 200.62.21. '
-    print 'ipdb.py -country US  (scan all the US ip ranges... Maybe a bad idea)'
-    print 'ipdb.py -country ALL -ip 200 -sleep 5 (scan all the ip starting with 200. and wait 5 seconds between requests)'
-    print 'ipdb.py -country ALL (scan all the ip ranges... This will take it forever :P )'
+    print ('Ip Database filler utility v1.0')
+    print ('')
+    print ('-------------------------------------------------------------------------------------------------------------')
+    print ('*********************************Fill the database with whois information************************************')
+    print ('-------------------------------------------------------------------------------------------------------------')
+    print ('Example usage')
+    print ('ipdb.py -ip 200. -country US (scan all the US ip address starting with 200.)')
+    print ('Note: You can also use a more narrow range like 200.62.21. ')
+    print ('ipdb.py -country US  (scan all the US ip ranges... Maybe a bad idea)')
+    print ('ipdb.py -country ALL -ip 200 -sleep 5 (scan all the ip starting with 200. and wait 5 seconds between requests)')
+    print ('ipdb.py -country ALL (scan all the ip ranges... This will take it forever :P )')
